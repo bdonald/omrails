@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
   # :recoverable
   attr_accessible :username, :email, :remember_me,  :password, :password_confirmation, :name
   #:title, :body,
+
+  has_many :pins
 end
